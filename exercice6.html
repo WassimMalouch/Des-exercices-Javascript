@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(95, 158, 160, 0.597);
+        }
+        h2{
+            display: inline;
+            background-color: cadetblue;
+            color: azure;
+            padding:50px 100px;
+            border-radius:10px ;
+
+        }
+        input{
+           
+            padding: 10px 20px;
+            background-color:gainsboro;
+            border-radius:10px ;
+            color:black;
+
+        }
+
+        #container{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap:40px;
+        }
+        #form{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap:20px; 
+        }
+        .cls{
+            display: flex;
+            gap: 20px;
+        }
+        button{
+            padding: 10px 50px;
+            background-color: rgba(169, 169, 169, 0.481);
+            color: aliceblue;
+            border-radius:10px ;
+        }
+    </style>
+</head>
+<body>
+    
+<div id="container">
+
+    <h2>Calculate your finale salary</h2>
+
+
+
+    <form id="form">
+
+
+        <div class="cls">
+        <input id="Nom" type="text" placeholder="put your name here">
+        </div>
+
+        <div class="cls">
+        <input id="salaire" type="number" placeholder="put your salary here">
+        </div>
+
+      
+
+        <div class="cls">
+        <input type="radio" id="gender1" name="g"  value="F">
+        Female
+        <input type="radio" id="gender2" name="g"  value="M">
+        Male
+        </div>
+
+        <div class="cls">
+        <input type="radio" id="charge1" name="c"  value="3">
+        3 person in charge
+        <input type="radio" id="charge2" name="c"  value="4">
+        4 person in charge 
+        </div>
+
+        <div class="cls">
+        <input type="radio" id="bonus1" name="r"  value="100">
+        Bonus de 100 $
+        <input type="radio" id="bonus2" name="r"  value="150">
+        Bonus de 150 $ allocation 
+        </div>
+    </form>
+    <button id="btn">calculate</button>
+</div>
+<script defer src="ex6.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+        #game{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .visible{
+            visibility: visible; 
+
+        }
+        .hiden{
+            visibility: hidden; 
+        }
+        #start{
+            padding: 25px;
+            background-color: blanchedalmond;
+            color: dimgray;
+        }
+        #try{
+            background-color: dimgray;
+            color:blanchedalmond ;  
+        }
+    
+    </style>
+</head>
+<body>
+    
+<div id="container">
+<button id="start" class="visible"> Start the game </button>
+
+<div id="game" class="hiden">
+Nombre de coups<output id='coups' ></output>
+<input id="inputt"  type="number" placeholder="try trah!">
+<button id="try" > try this number </button>
+</div>
+</div>
+    <script src="ex5.js" defer></script>
+</body>
+</html>
